@@ -54,3 +54,15 @@
     box-shadow: 0 20px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+
+/* ====================== MEDIA QUERIES (TABLETTES) ===================== */
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+/* ====================== MEDIA QUERIES (SMARTPHONE) ===================== */
+
+@media screen and (max-width: 600px) {
+    
+}
