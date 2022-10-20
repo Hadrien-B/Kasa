@@ -18,8 +18,7 @@ root.render(
       
         <Banner />
         <Logement />
-        <About />
-        <Error />
+      
         <Footer />
       
     </BrowserRouter>
