@@ -14,8 +14,10 @@
     --color-main:#FF6060;
     --color-white: #FFFFFF;
     --color-card: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    --color-background: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300));
     --color-footer: #000000;
     --color-collapse: #F6F6F6;
+    --color-gallery: #F7F7F7;
 
     --transition: all 400ms ease;
 

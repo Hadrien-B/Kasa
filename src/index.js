@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
-import Home from './pages/Home/home';
+import Banner from './pages/Banner/banner';
 import Logement from './pages/Logements/logement';
 import About from './pages/About/about';
 import Error from './pages/Error/error';
@@ -16,7 +16,7 @@ root.render(
     <BrowserRouter>
       <Header />
       
-        <Home />
+        <Banner />
         <Logement />
         <About />
         <Error />
