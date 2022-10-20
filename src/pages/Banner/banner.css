@@ -1,0 +1,18 @@
+.banner__container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 223px;
+    margin-top: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(../../assets/ImgHomeDesk.png);
+    border-radius: 25px;
+
+}
+
+.text__banner {
+    color: var(--color-white);
+    font-size: 48px;
+    line-height: 68px;
+    font-weight: 500;
+}
