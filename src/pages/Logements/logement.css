@@ -11,6 +11,12 @@
     background: var(--color-gallery);
 }
 
+@media screen and (max-width: 1256px) {
+    .gallery__container {
+        border-radius: 0;
+    }
+}
+
 .gallery__card {
     display: flex;
     position: relative;
@@ -27,7 +33,6 @@
     font-weight: 500;
     font-size: 18px;
     color: var(--color-white);
-    z-index: 2;
 }
 
 .gallery__card-image {
@@ -57,12 +62,67 @@
 
 /* ====================== MEDIA QUERIES (TABLETTES) ===================== */
 
-@media screen and (max-width: 1024px) {
-  
+
+@media screen and (max-width: 1256px) {
+    .gallery__container {
+        border-radius: 0;
+    }
+    .gallery__card {
+        width: 500px;
+        height: 255px;
+    }
 }
+
+@media screen and (max-width: 1164px) {
+    .gallery__card {
+        width: 400px;
+        height: 255px;
+    }
+}
+
+@media screen and (max-width: 951px) {
+    .gallery__card {
+        width: 335px;
+        height: 255px;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .gallery__card {
+        width: 315px;
+        height: 255px;
+    }
+}
+
+
 
 /* ====================== MEDIA QUERIES (SMARTPHONE) ===================== */
 
-@media screen and (max-width: 600px) {
-    
+
+@media screen and (max-width: 770px) {
+    .gallery__card {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 739px) {
+    .gallery__card {
+        width: 650px;
+        height: 300px;
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .gallery__card {
+        width: 450px;
+        height: 255px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gallery__card {
+        width: 335px;
+        height: 255px;
+    }
 }
