@@ -22,6 +22,12 @@
     font-weight: 500;
 }
 
+.about__banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(../../assets/ImgAboutDesk.png);
+
+}
+
+
 /* ====================== MEDIA QUERIES (TABLETTES) ===================== */
 
 @media screen and (max-width: 1024px) {
