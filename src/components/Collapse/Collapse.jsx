@@ -1,28 +1,29 @@
 import React, { useState } from 'react'
-import useCollapse from 'react-collapse'
 import './collapse.css'
+import ArrowUp from '../../assets/ArrowUp.png'
+import ArrowDown from '../../assets/ArrowDown.png'
 
-const Collapse = () => {
-  const [isOpen, setOpen] = useState(false)
-  const { getCollapsProps, getToggleProps } = useCollapse({ isOpen })
-  function handleOnClick() {
-    setOpen(!isOpen)
+function Collapse({ title, description }) {
+  /* Hook d'état */
+  const [isOpen, setIsOpen] = useState(false)
+
+  const handleCollapse = () => {
+    setIsOpen(!isOpen)
   }
+
   return (
     <div className="collapse">
-      <div
-        className="header__collapse"
-        {...getToggleProps({ onclick: handleOnClick })}
-      >
-        {isOpen ? 'Collapse' : 'Expand'}
-      </div>
-      <div {...getCollapsProps()}>
-        <div className="content__collapse">
-          Les annonces postées sur Kasa garantissent une fiabilité totale. Les
-          photos sont conformes aux logements, et toutes les informations sont
-          régulièrement vérifiées par nos équipes.
-        </div>
-      </div>
+      <article className="collapse__header" onClick={handleCollapse}>
+        <h4 className="collapse__title">{title}</h4>
+        <span>
+          <img
+            src={isOpen ? ArrowUp : ArrowDown}
+            alt="flèche"
+            className="collapse__arrowImg"
+          />
+        </span>
+      </article>
+      {isOpen && <div className="collapse__content">{description}</div>}
     </div>
   )
 }
