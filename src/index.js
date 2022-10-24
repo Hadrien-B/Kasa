@@ -2,7 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Gallerie from './components/Gallerie/Gallerie';
+import Gallery from './components/Gallery/Gallery';
 import Footer from './components/Footer/Footer'
 import Logement from './pages/Logements/logement';
 import About from './pages/About/about';
@@ -14,7 +14,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Gallerie />} />
+        <Route path='/' element={<Gallery />} />
         <Route path='/logement/:id' element={<Logement />} />
         <Route path='/about' element={<About />} />
         <Route path='/*' element={<Error />} />
