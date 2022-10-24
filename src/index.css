@@ -24,6 +24,8 @@
     --container-width-lg: 1240px;
     --container-width-md: 86%;
     --container-width-sm: 90%;
+
+
 }
 
 html {
@@ -33,9 +35,11 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--color-main);
-    max-width: 1240px;
     margin: auto;
 }
+
+
+
 
 h1, h2, h3, h4, h5 {
     font-weight: 500;
