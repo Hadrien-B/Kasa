@@ -2,13 +2,11 @@ import React from 'react'
 import './gallery.css'
 import { NavLink } from 'react-router-dom'
 import { data } from '../../API/data'
-import Header from '../Header/Header'
 import Banner from '../Banner/Banner'
 
 const Gallerie = () => {
   return (
     <div>
-      <Header />
       <Banner />
       <section className="container gallery__container">
         {data.map(({ id, cover, title }) => {
