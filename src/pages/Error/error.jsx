@@ -1,11 +1,9 @@
 import React from 'react'
-import Header from '../../components/Header/Header'
 import './error.css'
 
 const Error = () => {
   return (
     <div>
-      <Header />
       <main className="container container__error">
         <div className="error">404</div>
         <div className="message__error">

@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 200px 0;
 }
 
 .error {
@@ -11,10 +12,12 @@
 }
 .message__error {
     font-size: 36px;
-    line-height: 51px;
+    line-height: 100px;
 }
 
 .link__error {
     font-size: 18px;
     color: var(--color-main);
+    margin-top: 150px;
+    text-decoration: underline;
 }
