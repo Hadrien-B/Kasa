@@ -7,19 +7,25 @@ import Footer from './components/Footer/Footer'
 import Logement from './pages/Logements/logement';
 import About from './pages/About/about';
 import Error from './pages/Error/error';
+import Header from './components/Header/Header';
 
 const app = document.getElementById('root')
 const root = createRoot(app)
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Gallery />} />
-        <Route path='/logement/:id' element={<Logement />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/*' element={<Error />} />
-      </Routes>
+    <div className='App'>
+      <div className='main'>
+      <Header />
+        <Routes>
+          <Route path='/' element={<Gallery />} />
+          <Route path='/logement/:id' element={<Logement />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/*' element={<Error />} />
+        </Routes>
+        </div>
       <Footer />
+    </div>
     </BrowserRouter>
   </React.StrictMode>
 )

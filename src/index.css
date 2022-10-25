@@ -24,21 +24,27 @@
     --container-width-lg: 1240px;
     --container-width-md: 86%;
     --container-width-sm: 90%;
-
-
 }
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--color-main);
-    margin: auto;
+}
+.main {
+    flex-grow: 1;
+    padding: 20px;
 }
 
-
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100rem;
+}
 
 
 h1, h2, h3, h4, h5 {
@@ -52,6 +58,7 @@ h1, h2, h3, h4, h5 {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 a:visited {
