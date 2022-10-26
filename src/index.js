@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Gallery from './components/Gallery/Gallery';
 import Footer from './components/Footer/Footer'
 import Logement from './pages/Logements/logement';
@@ -13,7 +13,7 @@ const app = document.getElementById('root')
 const root = createRoot(app)
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <Router>
     <div className='App'>
       <div className='main'>
       <Header />
@@ -26,6 +26,6 @@ root.render(
         </div>
       <Footer />
     </div>
-    </BrowserRouter>
+    </Router>
   </React.StrictMode>
 )
