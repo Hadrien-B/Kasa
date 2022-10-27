@@ -38,6 +38,9 @@
     text-decoration: none;
 }
 
+.underline {
+    border-bottom-width: 2px;
+}
 
 
 
