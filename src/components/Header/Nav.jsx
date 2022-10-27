@@ -4,13 +4,13 @@ import './header.css'
 
 const Nav = () => {
   return (
-    <div className="navigation">
-      <ul>
+    <div>
+      <ul className="navigation">
         <NavLink to="/">
-          <li>Accueil</li>
+          <li className="nav">Accueil</li>
         </NavLink>
         <NavLink to="/about">
-          <li>A Propos</li>
+          <li className="nav">A Propos</li>
         </NavLink>
       </ul>
     </div>
