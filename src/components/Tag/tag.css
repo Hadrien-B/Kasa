@@ -1,7 +1,6 @@
 .tag{
     background-color: var(--color-main);
     border-radius: 10px;
-    width: 115px;
     height: 25px;
     display: flex;
     align-items: center;
@@ -11,7 +10,7 @@
 
 .content__tag{
     color: var(--color-white);
-    margin: 0;
     font-size: 14px;
     font-weight: 200;
+    padding: 11px;
 }
