@@ -6,6 +6,7 @@
 
 .description__apartment {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -26,27 +27,47 @@
     margin-top: 15px;
 }
 
-.info__apartment {
+.info__host {
+    margin-top: 30px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
 
 .host {
     display: flex;
-    font-size: 18px;
     align-items: center;
+    font-size: 18px;
+}
+
+.name__host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .img__host {
     border-radius: 50%;
     height: 64px;
     width: 64px;
-    margin-left: .5rem;
+    margin-left: 0.5rem;
 }
 
 .container__collapse {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 55px;
+}
+
+
+
+.apartment__equipments {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.list__equipments {
+    list-style: none;
 }
 
