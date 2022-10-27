@@ -17,11 +17,12 @@
 }
 
 
-ul {
+.navigation {
     display: flex;
     flex-direction: row;
 }
-li {
+
+.nav {
     display: flex;
     flex-direction: row;
     color: var(--color-main);
@@ -29,10 +30,11 @@ li {
     margin: 17px 0px 17px 57px;
 }
 
-li:hover {
+.nav:hover {
     text-decoration: underline;
 }
-li:visited {
+
+.nav:visited {
     text-decoration: none;
 }
 
