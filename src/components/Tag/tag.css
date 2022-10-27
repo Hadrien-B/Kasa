@@ -11,6 +11,6 @@
 .content__tag{
     color: var(--color-white);
     font-size: 14px;
-    font-weight: 200;
-    padding: 11px;
+    font-weight: 400;
+    padding: 25px;
 }
