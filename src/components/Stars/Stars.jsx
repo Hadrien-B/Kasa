@@ -9,8 +9,8 @@ export default function Stars(props) {
       stars.push(
         <img
           src={StarColor}
-          alt="star full"
-          className="star-full"
+          alt="étoile orange"
+          className="star--color"
           key={i}
         ></img>
       )
@@ -18,8 +18,8 @@ export default function Stars(props) {
       stars.push(
         <img
           src={StarGrey}
-          alt="star empty"
-          className="star-empty"
+          alt="étoile grise"
+          className="star--grey"
           key={i}
         ></img>
       )
