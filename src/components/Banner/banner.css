@@ -9,11 +9,6 @@
     border-radius: 25px;
 }
 
-@media screen and (max-width: 1242px) {
-    .banner__container {
-        margin: 5%;
-    }
-}
 
 .text__banner {
     color: var(--color-white);
@@ -30,7 +25,7 @@
 
 /* ====================== MEDIA QUERIES (TABLETTES) ===================== */
 
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
    .text__banner {
        font-size: 40px;
    }
@@ -38,14 +33,23 @@
    
    /* ====================== MEDIA QUERIES (SMARTPHONE) ===================== */
    
-   @media screen and (max-width: 600px) {
+   @media only screen and (max-width: 600px) {
     .text__banner {
         font-size: 24px;
     }
     .banner__container {
-        width: 335px;
         height: 111px;
-        margin: auto;
+        margin: 4%;
+        border-radius: 10px;
     }
    }
    
+   @media only screen and (max-width: 390px) {
+    .banner__container {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(../../assets/ImgHomeMobile.png);
+    }
+    .text__banner {
+        font-size: 20px;
+    }
+
+   }
