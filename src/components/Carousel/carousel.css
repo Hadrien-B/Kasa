@@ -16,8 +16,7 @@
   position: absolute;
   cursor: pointer;
   width: 47px;
-  height: 79;
-
+  height: 79px;
 }
 .left{
   left: 0;
@@ -35,4 +34,15 @@
   object-fit: cover;
   object-position: center;
   border-radius: 2rem;
+}
+
+@media only screen and (max-width: 600px) {
+    
+  .carousel {
+      height: 255px;
+  }
+  .arrow {
+    width: 12px;
+    height: 20px;
+  }
 }
