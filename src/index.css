@@ -38,12 +38,12 @@ body {
 .main {
     flex-grow: 1;
     padding: 20px;
+    min-height: 90vh;
 }
 
 .App {
     display: flex;
     flex-direction: column;
-    height: 100rem;
 }
 
 
