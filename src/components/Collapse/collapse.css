@@ -13,7 +13,6 @@
     border-radius: 5px;
     height: 47px;
     padding: 1.5rem 1rem;
-    height: 2.5rem;
     
 }
 
@@ -32,3 +31,15 @@
     font-weight: 400;
 }
 
+@media only screen and (max-width: 600px) {
+    
+    .collapse__header {
+        height: 20px;
+        padding: 1.1rem 1.1rem;
+    }
+
+
+    .collapse__title {
+        font-size: 18px;
+    }
+}
