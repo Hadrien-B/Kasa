@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container header__container">
         <div className="logo">
           <NavLink to="/">
-            <img src={LOGO} alt="logo" />
+            <img src={LOGO} alt="logo" className="img__logo" />
           </NavLink>
         </div>
         <Nav />

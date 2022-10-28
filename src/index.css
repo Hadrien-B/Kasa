@@ -23,7 +23,7 @@
 
     --container-width-lg: 1240px;
     --container-width-md: 86%;
-    --container-width-sm: 70%;
+    --container-width-sm: 95%;
 }
 
 html {
@@ -35,9 +35,9 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--color-main);
 }
+
 .main {
     flex-grow: 1;
-    padding: 20px;
     min-height: 90vh;
 }
 
@@ -45,7 +45,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
 
 h1, h2, h3, h4, h5 {
     font-weight: 500;
@@ -56,6 +55,8 @@ h1, h2, h3, h4, h5 {
     margin: auto;
 }
 
+
+
 a {
     text-decoration: none;
     color: inherit;
@@ -65,3 +66,13 @@ a:visited {
     text-decoration: none;
 }
 
+
+
+/* ====================== MEDIA QUERIES (TABLETTES) ===================== */
+
+@media only screen and (max-width: 600px) {
+    
+    main {
+        padding: 0;
+    }
+    }

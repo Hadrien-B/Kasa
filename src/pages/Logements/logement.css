@@ -71,3 +71,15 @@
     list-style: none;
 }
 
+@media only screen and (max-width: 900px) {
+    .container__collapse {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    }
+
+@media only screen and (max-width: 600px) {
+    
+    .container__apartment {
+        margin: 4%;
+    }
+}
