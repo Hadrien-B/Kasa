@@ -41,6 +41,9 @@
   .carousel {
       height: 255px;
   }
+  .img__carousel {
+    border-radius: 10px;
+  }
   .arrow {
     width: 12px;
     height: 20px;

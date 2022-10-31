@@ -25,7 +25,7 @@
 
 /* ====================== MEDIA QUERIES (TABLETTES) ===================== */
 
-@media only screen and (max-width: 1024px) {
+@media  screen and (max-width: 1024px) {
    .text__banner {
        font-size: 40px;
    }
@@ -33,23 +33,31 @@
    
    /* ====================== MEDIA QUERIES (SMARTPHONE) ===================== */
    
-   @media only screen and (max-width: 600px) {
+   @media  screen and (max-width: 600px) {
     .text__banner {
         font-size: 24px;
     }
     .banner__container {
         height: 111px;
-        margin: 4%;
+        margin: 5%;
         border-radius: 10px;
     }
    }
    
-   @media only screen and (max-width: 390px) {
+   @media  screen and (max-width: 600px) {
     .banner__container {
+        background-size: 100%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(../../assets/ImgHomeMobile.png);
+        justify-content: flex-start;
+        text-align: left;
+    }
+    .text__container {
+        margin: 5%;
+        width: 62%
+
     }
     .text__banner {
-        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
     }
-
    }

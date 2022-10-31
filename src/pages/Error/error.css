@@ -21,3 +21,25 @@
     margin-top: 150px;
     text-decoration: underline;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .container__error {
+        margin-top: 70px;
+        margin-bottom: 0px;
+    }
+    .error {
+        font-size: 96px;
+    }   
+
+    .message__error {
+        font-size: 18px;
+        line-height: 30px;
+        width: 60%;
+    }
+
+    .link__error {
+        font-size: 15px;
+        margin-top: 90px;
+    }
+}

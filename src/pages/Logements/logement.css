@@ -74,12 +74,41 @@
 @media only screen and (max-width: 900px) {
     .container__collapse {
         grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+        margin-bottom: 100px;
     }
     }
 
 @media only screen and (max-width: 600px) {
     
     .container__apartment {
-        margin: 4%;
+        margin: 5%;
     }
+
+    .description__apartment {
+        flex-direction: column;
+    }
+
+    .title__apartment {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 24px;
+    }
+
+    .info__host {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+
+    .name__host {
+        font-size: 15px;
+    }
+
+    .img__host {
+        width: 35px;
+        height: 35px;
+    }
+
+    
 }
