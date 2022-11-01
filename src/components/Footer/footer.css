@@ -11,7 +11,6 @@
 .text__footer {
     color: var(--color-white);
     margin-top: 1.5rem;
-
 }
 
 .footer__logo.text__footer {
@@ -19,8 +18,17 @@
 }
 
 .footer__logo {
-    Width: 122px;
-    Height: 39.44px;
-    Top: 66px;
-    Left: 659px;
+    top: 66px;
+    left: 659px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .footer__logo {
+        width: 80px;
+    }
+
+    .text__footer {
+        font-size: 10px;
+    }
 }

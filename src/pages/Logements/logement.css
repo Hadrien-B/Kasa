@@ -71,6 +71,15 @@
     list-style: none;
 }
 
+/* ====================== MEDIA QUERIES (TABLETTES) ===================== */
+
+@media (min-width: 601px) and (max-width: 1300px) {
+    .container__apartment {
+      margin: 4%;
+    }
+  }
+  
+
 @media only screen and (max-width: 900px) {
     .container__collapse {
         grid-template-columns: repeat(1, 1fr);

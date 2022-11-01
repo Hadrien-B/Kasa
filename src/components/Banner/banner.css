@@ -25,6 +25,11 @@
 
 /* ====================== MEDIA QUERIES (TABLETTES) ===================== */
 
+@media (min-width: 601px) and (max-width: 1300px) {
+    .banner__container {
+        margin: 4%;
+    }
+}
 @media  screen and (max-width: 1024px) {
    .text__banner {
        font-size: 40px;

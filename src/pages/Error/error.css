@@ -23,6 +23,18 @@
 }
 
 
+@media only screen and (max-width: 900px) {
+    .error {
+        font-size: 220px;
+    }   
+
+    .message__error {
+        font-size: 27px;
+    }
+
+}
+
+
 @media only screen and (max-width: 600px) {
     .container__error {
         margin-top: 70px;

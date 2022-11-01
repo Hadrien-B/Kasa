@@ -36,6 +36,11 @@
   border-radius: 2rem;
 }
 
+
+/* ====================== MEDIA QUERIES (TABLETTES) ===================== */
+
+
+
 @media only screen and (max-width: 600px) {
     
   .carousel {
