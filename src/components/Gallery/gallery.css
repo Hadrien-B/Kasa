@@ -1,16 +1,19 @@
 .gallery__container {
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding: 3% 3% 3% 3%;
+    padding: 30px 10px 30px 10px;
     border-radius: 25px;
     margin-top: 50px;
     margin-bottom: 50px;
     background: var(--color-gallery);
 }
 
+.container__card {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
 
 .gallery__card {
     display: flex;
@@ -58,11 +61,17 @@
 
 @media (min-width: 601px) and (max-width: 1300px) {
     .gallery__container {
-        padding: 3% 0;
+        padding: 0;
         border-radius: 0;
     }
+
     .container__card {
-        margin: auto;
+        margin: 3px;
+    }
+
+    .gallery__card {
+        margin: 20px 2%;
+
     }
 }
 

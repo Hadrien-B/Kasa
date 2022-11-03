@@ -9,9 +9,9 @@ const Gallerie = () => {
     <div>
       <Banner />
       <section className="container gallery__container">
-        {data.map(({ id, cover, title }) => {
-          return (
-            <div className="container__card">
+        <div className="container__card">
+          {data.map(({ id, cover, title }) => {
+            return (
               <article key={data.id} className="gallery__card">
                 <Link to={`/logement/${id}`}>
                   <div className="gradient__card"></div>
@@ -23,9 +23,9 @@ const Gallerie = () => {
                   <h3>{title}</h3>
                 </Link>
               </article>
-            </div>
-          )
-        })}
+            )
+          })}
+        </div>
       </section>
     </div>
   )
