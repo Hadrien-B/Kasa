@@ -6,6 +6,7 @@ import ArrowRight from '../../assets/ArrowRight.png'
 export default function Carousel(props) {
   const pictures = props.pictures
   const [slide, setSlide] = useState(0)
+  const numberSlide = slide
   const nextSlide = () => {
     slide === pictures.length - 1 ? setSlide(0) : setSlide(slide + 1)
   }
@@ -36,6 +37,9 @@ export default function Carousel(props) {
         alt={slide}
         className="img__carousel"
       />
+      <span>
+        {numberSlide + 1}/{pictures.length}
+      </span>
     </div>
   )
 }
