@@ -37,9 +37,9 @@ export default function Carousel(props) {
         alt={slide}
         className="img__carousel"
       />
-      <span>
+      <div className="number__pictures">
         {numberSlide + 1}/{pictures.length}
-      </span>
+      </div>
     </div>
   )
 }
