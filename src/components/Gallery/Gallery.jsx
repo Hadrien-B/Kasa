@@ -12,7 +12,7 @@ const Gallerie = () => {
         <div className="container__card">
           {data.map(({ id, cover, title }) => {
             return (
-              <article key={data.id} className="gallery__card">
+              <article key={id} className="gallery__card">
                 <Link to={`/logement/${id}`}>
                   <div className="gradient__card"></div>
                   <img
