@@ -6,10 +6,10 @@ const Nav = () => {
   return (
     <div>
       <ul className="navigation">
-        <NavLink tag={Link} exact activeClassName="underline" to="/">
+        <NavLink tag={Link} to="/">
           <li className="nav">Accueil</li>
         </NavLink>
-        <NavLink tag={Link} exact activeClassName="underline" to="/about">
+        <NavLink tag={Link} to="/about">
           <li className="nav">A Propos</li>
         </NavLink>
       </ul>
