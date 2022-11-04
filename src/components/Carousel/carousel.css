@@ -1,4 +1,4 @@
-.carousel{
+.carousel{/*Carrousel d'image de la page logement*/
   height: 415px;
   display: flex;
   justify-content: center;
@@ -6,12 +6,12 @@
   position: relative;
 }
  
-.arrows{
+.arrows{/*Permet de gérer l'emplacement des flèches*/
   display: flex;
   align-items: center;
 }
 
-.arrow{
+.arrow{/*Style des flèches*/
   color: var(--color-white);
   position: absolute;
   cursor: pointer;
@@ -19,17 +19,17 @@
   height: 79px;
 }
 
-.left{
+.left{/*Positionnement individuel des flèches*/
   left: 0;
   margin-left: 15px
 }
 
-.right{
+.right{/*Positionnement individuel des flèches*/
   right: 0;
   margin-right: 15px;
 }
 
-.img__carousel{
+.img__carousel{/*Style de l'image*/
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -37,30 +37,29 @@
   border-radius: 2rem;
 }
 
-.number__pictures {
+.number__pictures {/*Style de l'indicateur du nombre d'image disponible*/
   position: absolute;
   color: var(--color-white);
   bottom: 25px;
 }
 
-/* ====================== MEDIA QUERIES (TABLETTES) ===================== */
+/* ====================== MEDIA QUERIES (SMARTPHONES) ===================== */
 
-
-
-@media only screen and (max-width: 600px) {
-    
+@media only screen and (max-width: 600px) {    
   .carousel {
       height: 255px;
   }
+
   .img__carousel {
     border-radius: 10px;
   }
+
   .arrow {
     width: 12px;
     height: 20px;
   }
 
-  .number__pictures {
+  .number__pictures {/*L'indicateur du nombre d'image disparaît sur mobile*/
     color: transparent;
   }
 }

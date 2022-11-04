@@ -1,14 +1,14 @@
 import React from 'react'
-import './about.css'
-import AboutBanner from '../../components/Banner/AboutBanner'
-import Collapse from '../../components/Collapse/Collapse'
+import './about.css' //Importation du style
+import AboutBanner from '../../components/Banner/AboutBanner' //Import du composant
+import Collapse from '../../components/Collapse/Collapse' //Import du composant
 
 const About = () => {
   return (
     <div>
-      <AboutBanner />
+      <AboutBanner /> {/*On wrappe le composant 'Bannière de la page A propos*/}
       <div className="container container__about">
-        <Collapse
+        <Collapse //On wrappe le composant 'Collapse'
           title="Fiabilité"
           description="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
         />

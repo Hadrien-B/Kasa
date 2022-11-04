@@ -1,33 +1,38 @@
 .container__apartment {
+    /*Conteneur général*/
     margin: 15px auto;
 }
 
-
-
 .description__apartment {
+    /*Conteneur de la description de l'appartement*/
     display: flex;
     flex-direction: row;
+    /*Permet d'aligner les éléments*/
     justify-content: space-between;
 }
 
 .title__apartment {
+    /*Titre*/
     font-size: 36px;
     color: var(--color-main);
     margin-top: 40px;
 }
 
 .location__apartment {
+    /*Emplacement géographique*/
     font-size: 14px;
     margin-top: 10px;
 }
 
 .tags {
+    /*Gestion de l'emplacement des tags*/
     display: flex;
     flex-wrap: wrap;
     margin-top: 15px;
 }
 
 .info__host {
+    /*Gestion de la position des infos du loueur*/
     margin-top: 30px;
     display: flex;
     flex-direction: column;
@@ -35,18 +40,21 @@
 }
 
 .host {
+    /*Information du loueur*/
     display: flex;
     align-items: center;
     font-size: 18px;
 }
 
 .name__host {
+    /*Nom du loueur*/
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
 .img__host {
+    /*Photo du loueur*/
     border-radius: 50%;
     height: 64px;
     width: 64px;
@@ -54,15 +62,17 @@
 }
 
 .container__collapse {
+    /*Gestion des deux collapse*/
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /*Position en deux colonnes*/
     gap: 55px;
+    /*Espacement entre les colonnes*/
 }
 
-
-
 .apartment__equipments {
+    /*Style des équipements de l'appartement*/
     display: flex;
     flex-direction: column;
 }
@@ -75,26 +85,27 @@
 
 @media (min-width: 601px) and (max-width: 1300px) {
     .container__apartment {
-      margin: 4%;
+        margin: 4%;
     }
-  }
-  
+}
+
 
 @media only screen and (max-width: 900px) {
     .container__collapse {
         grid-template-columns: repeat(1, 1fr);
+        /*Au format Tablettes et Smartphones, les collapses se positionnent l'un au dessus de l'autre*/
         gap: 0;
         margin-bottom: 100px;
     }
-    }
+}
 
+/* ====================== MEDIA QUERIES (SMARTPHONES) ===================== */
 @media only screen and (max-width: 600px) {
-    
     .container__apartment {
         margin: 5%;
     }
 
-    .description__apartment {
+    .description__apartment { /*Sur smartphone les élémements se positionnent en colonne*/
         flex-direction: column;
     }
 
@@ -105,7 +116,7 @@
     }
 
     .info__host {
-        flex-direction: row-reverse;
+        flex-direction: row-reverse; /*les éléments sont positionnés en ligne sur smartphone*/
         justify-content: space-between;
         margin-top: 10px;
     }
@@ -118,6 +129,4 @@
         width: 35px;
         height: 35px;
     }
-
-    
 }

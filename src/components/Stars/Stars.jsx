@@ -1,10 +1,13 @@
-import './stars.css'
-import StarColor from '../../assets/StarColor.png'
-import StarGrey from '../../assets/StarGrey.png'
+import './stars.css' //Importation du style
+import StarColor from '../../assets/StarColor.png' //Importation des images
+import StarGrey from '../../assets/StarGrey.png' //Importation des images
 
+//Fonction gérant la notation
 export default function Stars(props) {
-  const stars = []
+  const stars = [] //Création d'un tableau vide
+  //Boucle récupérant la notation
   for (let i = 0; i < 5; i++) {
+    //Tant que i n'a pas atteint la notation, une étoile de couleur est ajoutée
     if (i < props.rating) {
       stars.push(
         <img
@@ -15,6 +18,7 @@ export default function Stars(props) {
         ></img>
       )
     } else {
+      //Lorsque le nombre de la notation a été atteint, on complète avec des étoiles grises
       stars.push(
         <img
           src={StarGrey}
@@ -25,5 +29,5 @@ export default function Stars(props) {
       )
     }
   }
-  return <div className="stars">{stars}</div>
+  return <div className="stars">{stars}</div> //On retourne le nombre d'étoiles (de couleur et grise) récupéré
 }

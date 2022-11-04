@@ -1,8 +1,9 @@
 import React from 'react'
 import logo from '../../assets/logo_Footer.svg'
-import './footer.css'
+import './footer.css' //Importation du style
 
 const Footer = () => {
+  //Composant Footer
   return (
     <div className="footer">
       <img src={logo} alt="logo Kasa" className="footer__logo" />

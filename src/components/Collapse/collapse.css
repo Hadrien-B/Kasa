@@ -2,7 +2,7 @@
     margin-top: 30px;
 }
 
-.collapse__header {
+.collapse__header { /*En tête du collapse*/
     display: flex;
     margin: 0 auto;
     align-items: center;
@@ -15,12 +15,12 @@
     padding: 1.5rem 1rem;   
 }
 
-.collapse__title {
+.collapse__title { /*Titre*/
     font-weight: 400;
     font-size: 24px;
 }
 
-.collapse__content {
+.collapse__content { /*Contenu*/
     background: var(--color-gallery);
     border-radius: 0 0 5px 5px;
     margin: 0 auto;
@@ -30,26 +30,23 @@
     font-weight: 400;
 }
 
-
-
+/* ====================== MEDIA QUERIES (SMARTPHONES) ===================== */
 @media only screen and (max-width: 600px) {
-    
-    .collapse__header {
+    .collapse__header {/*Diminution de la hauteur sur mobile*/
         height: 20px;
         padding: 1.1rem 1.1rem;
     }
 
-
-    .collapse__title {
+    .collapse__title {/*Diminution de la taille de la police sur mobile*/
         font-size: 16px;
     }
 
     .collapse__content {
-        font-size: 14px;
+        font-size: 14px;/*Diminution de la taille de la police sur mobile*/
         padding: 20px 10px 5px 10px;
     }
     
-    .collapse__arrowImg {
+    .collapse__arrowImg {/*Diminution de la taille de l'icône sur mobile*/
         width: 20px;
         height: 12px;
     }

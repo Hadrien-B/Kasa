@@ -1,18 +1,16 @@
-.logo {
-    height: 68px;
-}
-
-.header__container {
+.header__container { /*Conteneur de l'en-tête*/
     margin-top: 40px;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /*Place les éléments sur une même ligne*/
     justify-content: space-between;
 }
 
+.logo { 
+    height: 68px;
+}
 
-
-.navigation {
+.navigation { /*Conteneur du menu de navigation*/
     display: flex;
     flex-direction: row;
 }
@@ -25,7 +23,11 @@
     margin: 17px 0px 17px 57px;
 }
 
-.nav:hover {
+.nav:hover { /*Souligne l'élément au survol de la souris*/
+    text-decoration: underline;
+}
+
+.active { /*Souligne l'élément lorsque la page correspondante est active*/
     text-decoration: underline;
 }
 
@@ -33,38 +35,34 @@
     text-decoration: none;
 }
 
-
-
-
 /* ====================== MEDIA QUERIES (TABLETTES) ===================== */
-
 @media (min-width: 601px) and (max-width: 1300px) {
-    .header__container {
+    .header__container { /*Marge afin de ne pas coller le contenu aux bords de la page*/
         margin: 4%;
     }
 }
 
-
+/* ====================== MEDIA QUERIES (SMARTPHONE) ===================== */
 @media screen and (max-width: 640px) {
-    .img__logo {
+    .img__logo { /*Diminution de la taille de logo*/
         width: 145px;
         height: 47px;
     }
-    .navigation {
+
+    .navigation { /*Diminution de l'espace entre les deux éléments du menu de navigation*/
         gap: 15px;
     }
-    .nav {
+
+    .nav { 
         margin: 17px 0 10px 0;
         font-size: 12px;
-        text-transform: uppercase;
+        text-transform: uppercase; /*Les éléments du menu de navigation passent en majusule sur Smartphones*/
     }
 }
-
-/* ====================== MEDIA QUERIES (SMARTPHONE) ===================== */
 
 @media only screen and (max-width: 600px) {
     
     .header__container {
-        margin: 5%;
+        margin: 5% 5% 0 5%;
     }
 }

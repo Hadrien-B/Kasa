@@ -1,5 +1,6 @@
-import './tag.css'
+import './tag.css' //Importation du style
 
+//Composant 'Tag'
 export default function Tag(props) {
   return (
     <div className="tag">

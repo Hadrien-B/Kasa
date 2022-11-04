@@ -1,7 +1,8 @@
 import React from 'react'
-import './banner.css'
+import './banner.css' //Importation du style
 
 const Banner = () => {
+  //Composant "Bannière de la page d'accueil"
   return (
     <div>
       <section className="container banner__container">

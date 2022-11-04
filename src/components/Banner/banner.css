@@ -1,4 +1,4 @@
-.banner__container {
+.banner__container {/*Conteneur général des bannières*/
     display: flex;
     text-align: center;
     align-items: center;
@@ -10,28 +10,27 @@
 }
 
 
-.text__banner {
+.text__banner {/*Texte de la bannière de la page d'accueil*/
     color: var(--color-white);
     font-size: 48px;
     line-height: 68px;
     font-weight: 400;
 }
 
-.about__banner {
+.about__banner {/*Bannière de la page A propos */
     background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(../../assets/ImgAboutDesk.png);
-
 }
 
 
 /* ====================== MEDIA QUERIES (TABLETTES) ===================== */
 
 @media (min-width: 601px) and (max-width: 1300px) {
-    .banner__container {
+    .banner__container {/*Ajout d'une marge pour que le corps de soit pas collé aux bord de l'écran*/
         margin: 4%;
     }
 }
 @media  screen and (max-width: 1024px) {
-   .text__banner {
+   .text__banner {/*Diminution de la taille de la police du texte de la bannière 'accueil' pour les formats tabllettes*/
        font-size: 40px;
    }
    }
@@ -39,23 +38,20 @@
    /* ====================== MEDIA QUERIES (SMARTPHONE) ===================== */
    
    @media  screen and (max-width: 600px) {
-    .text__banner {
+    .text__banner {/*Diminution de la taille de la police du texte de la bannière 'accueil' pour les formats smartphones*/
         font-size: 24px;
     }
-    .banner__container {
+
+    .banner__container {/*Conteneur des bannières*/
         height: 111px;
-        margin: 5%;
-        border-radius: 10px;
-    }
-   }
-   
-   @media  screen and (max-width: 600px) {
-    .banner__container {
-        background-size: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(../../assets/ImgHomeMobile.png);
+        margin: 0 5%;
+        border-radius: 10px;/*La valeur de border radius diminue*/
+        background-size: 100%;/*Permet d'étirer l'image dans son conteneur*/
+        background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(../../assets/ImgHomeMobile.png);/*L'image de la bannière est modifiée sur smartphone*/
         justify-content: flex-start;
-        text-align: left;
+        text-align: left;/*Le text vient de placer à gauche de l'image*/
     }
+
     .text__container {
         margin: 5%;
         width: 62%
@@ -63,6 +59,10 @@
     }
     .text__banner {
         line-height: 30px;
-        font-weight: 400;
     }
-   }
+
+    .about__banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.300), rgba(0, 0, 0, 0.300)), url(../../assets/ImgAboutMobile.png);/*L'image de la bannière est modifiée sur smartphone*/
+        height: 223px;/*La taille de l'image de la bannière est modifiée sur smartphone*/
+    }
+}

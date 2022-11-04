@@ -1,17 +1,20 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import './logement.css'
+import './logement.css' //Importation du style
+//Importation des composants
 import Collapse from '../../components/Collapse/Collapse'
 import Stars from '../../components/Stars/Stars'
 import Tag from '../../components/Tag/Tag'
 import Carousel from '../../components/Carousel/Carousel'
-import { data } from '../../API/data'
+import { data } from '../../API/data' //Importation des données
 
+//Fonction logement permettant de récupérer toutes les informations d'un logmement
 export default function Logement() {
-  const { id } = useParams()
+  const { id } = useParams() //On récupère l'id du logement grâce à useParams
   const apartment = data.find((item) => item.id === id)
   const { title, location, rating, host, description, pictures } = apartment
   const listEquipment = (equipments) => {
+    //Création d'une constant récupérant la liste des équipements disponibles
     return (
       <ul className="apartment__equipments">
         {equipments.map((equipement, index) => {
@@ -27,14 +30,15 @@ export default function Logement() {
 
   return (
     <div className="container container__apartment">
-      <Carousel pictures={pictures} className />
+      <Carousel pictures={pictures} className />{' '}
+      {/*On wrappe notre composant 'carousel' en lui intégrant les images disponibles*/}
       <section className="container description__apartment">
         <div className="info__location">
           <h1 className="title__apartment">{title}</h1>
           <div className="location__apartment">{location}</div>
           <div className="tags">
             {apartment.tags.map((tag, index) => (
-              <Tag tag={tag} key={index} />
+              <Tag tag={tag} key={index} /> //On récupère tous les tags disponibles
             ))}
           </div>
         </div>
@@ -42,6 +46,7 @@ export default function Logement() {
           <div className="host">
             <div className="name__host">
               <div className="name__host__firstName">
+                {/*On scinde le nom et le prénom de l'hôte afin d'appliquer le style attendu*/}
                 {host.name.split(' ', 1)}
               </div>
               <div className="name__host__lasName">

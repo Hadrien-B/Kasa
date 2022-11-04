@@ -1,11 +1,11 @@
-.stars{
+.stars{ /*Etoile (notation des logements)*/
     display: flex;
     flex-direction: row;
     margin-top: 15px;
 }
 
 
-
+/* ====================== MEDIA QUERIES (SMARTPHONES) ===================== */
 @media only screen and (max-width: 600px) {
     .stars {
         width: 18px;

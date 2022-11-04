@@ -1,4 +1,4 @@
-.tag{
+.tag{ /*Style des tags*/
     background-color: var(--color-main);
     border-radius: 10px;
     height: 25px;
@@ -8,13 +8,14 @@
     margin-right: 8px;    
 }
 
-.content__tag{
+.content__tag{ /*Style du contenu*/
     color: var(--color-white);
     font-size: 14px;
     font-weight: 400;
     padding: 28px;
 }
 
+/* ====================== MEDIA QUERIES (SMARTPHONES) ===================== */
 @media only screen and (max-width: 600px) {
     .tag {
         border-radius: 5px;

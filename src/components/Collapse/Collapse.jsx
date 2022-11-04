@@ -1,16 +1,14 @@
 import React, { useState } from 'react'
-import './collapse.css'
+import './collapse.css' //Importation du style
 import ArrowUp from '../../assets/ArrowUp.png'
 import ArrowDown from '../../assets/ArrowDown.png'
 
 function Collapse({ title, description }) {
-  /* Hook d'état */
-  const [isOpen, setIsOpen] = useState(false)
-
+  //Composant collapse
+  const [isOpen, setIsOpen] = useState(false) //Hook d'état
   const handleCollapse = () => {
     setIsOpen(!isOpen)
   }
-
   return (
     <div className="collapse">
       <article className="collapse__header" onClick={handleCollapse}>

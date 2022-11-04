@@ -1,4 +1,4 @@
-.gallery__container {
+.gallery__container { /*Conteneur général*/
     width: 100%;
     padding: 30px 10px 30px 10px;
     border-radius: 25px;
@@ -7,15 +7,14 @@
     background: var(--color-gallery);
 }
 
-.container__card {
+.container__card { /*Conteneur des vignettes*/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
 }
 
-.gallery__card {
+.gallery__card { /*Vignettes*/
     display: flex;
     position: relative;
     margin: 20px 20px 20px 20px;
@@ -24,8 +23,8 @@
     border-radius: 10px;
 }
 
-.gallery__card h3{
-    position: absolute;
+.gallery__card h3{ /*Titre de chaque vignette*/
+    position: absolute; /*Permet de positionner le titre*/
     bottom: 0.5rem;
     left: 0.5rem;
     font-weight: 500;
@@ -33,14 +32,14 @@
     color: var(--color-white);
 }
 
-.gallery__card-image {
+.gallery__card-image { /*Sytle de l'image*/
     width: 100%;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
 }
 
-.gradient__card {
+.gradient__card { /*Calque pour appliquer le dégradé et assombrir l'image pour facilité la lecture du titre*/
     height: 100%;
     width: 100%;
     position: absolute;
@@ -50,7 +49,7 @@
     border-radius: 10px;
 }
 
-.gallery__card:hover {
+.gallery__card:hover { /*Effet de de zoom et d'ombre au survol de la souris*/
     transition: transform 0.25s ease;
     transform: scale(1.04);
     transition-duration: 0.25s;
@@ -58,10 +57,8 @@
 }
 
 /* ====================== MEDIA QUERIES (TABLETTES) ===================== */
-
 @media (min-width: 601px) and (max-width: 1300px) {
-    .gallery__container {
-        padding: 0;
+    .gallery__container { /*Disparition du boder-radius sur tablettes*/
         border-radius: 0;
     }
 
@@ -71,31 +68,23 @@
 
     .gallery__card {
         margin: 20px 2%;
-
     }
 }
 
-
 /* ====================== MEDIA QUERIES (SMARTPHONE) ===================== */
-
 @media only screen and (max-width: 600px) {
     
     .gallery__container {
-        background: var(--color-white);
+        background: var(--color-white); /*Modification de la couleur couleur d'arrière plan sur Smartphones*/ 
         padding: 0;
         margin: 2% 5%;
         width: auto;
     }
 
-    .gallery__card {
-        height: 100% !important;
+    .gallery__card { 
+        height: 100% !important; /*Permet aux vignettes de prendre tout l'espace disponible*/
         width: 100% !important;
         margin: 9px 0;
 
     }
-
-}
-
-@media only screen and (max-width: 600px) {
-    
 }
