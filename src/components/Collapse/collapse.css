@@ -30,7 +30,7 @@
     font-weight: 400;
 }
 
-/* ====================== MEDIA QUERIES (SMARTPHONES) ===================== */
+/* ====================== MEDIA QUERIES (TABLETTES) ===================== */
 @media only screen and (max-width: 900px) {
     .collapse__title {
         font-size: 21px;
