@@ -41,7 +41,7 @@ export default function Carousel(props) {
       />
       <div className="number__pictures">
         {/*Affichage de l'index de l'image par rapport à sa position dans le tableau*/}
-        {slide + 1}/{pictures.length}{' '}
+        {slide + 1}/{pictures.length}
       </div>
     </div>
   )
