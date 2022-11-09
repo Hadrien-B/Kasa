@@ -31,6 +31,16 @@
 }
 
 /* ====================== MEDIA QUERIES (SMARTPHONES) ===================== */
+@media only screen and (max-width: 900px) {
+    .collapse__title {
+        font-size: 21px;
+    }
+    .collapse__content {
+        font-size: 20px;
+    }
+}
+
+/* ====================== MEDIA QUERIES (SMARTPHONES) ===================== */
 @media only screen and (max-width: 600px) {
     .collapse__header {/*Diminution de la hauteur sur mobile*/
         height: 20px;
