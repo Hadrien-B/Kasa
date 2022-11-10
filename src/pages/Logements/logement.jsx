@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 import './logement.css' //Importation du style
 //Importation des composants
+import Error from './../Error/error'
 import Collapse from '../../components/Collapse/Collapse'
 import Stars from '../../components/Stars/Stars'
 import Tag from '../../components/Tag/Tag'
@@ -12,6 +13,9 @@ import { data } from '../../API/data' //Importation des données
 export default function Logement() {
   const { id } = useParams() //On récupère l'id du logement grâce à useParams
   const apartment = data.find((item) => item.id === id)
+  if (!apartment) {
+    return <Error />
+  }
   const { title, location, rating, host, description, pictures } = apartment
   const listEquipment = (equipments) => {
     //Création d'une constante récupérant la liste des équipements disponibles
@@ -30,7 +34,7 @@ export default function Logement() {
 
   return (
     <div className="container container__apartment">
-      <Carousel pictures={pictures} className />{' '}
+      <Carousel pictures={pictures} />
       {/*On wrappe notre composant 'carousel' en lui intégrant les images disponibles*/}
       <section className="container description__apartment">
         <div className="info__location">
