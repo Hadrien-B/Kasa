@@ -14,7 +14,7 @@ export default function Logement() {
   const apartment = data.find((item) => item.id === id)
   const { title, location, rating, host, description, pictures } = apartment
   const listEquipment = (equipments) => {
-    //Création d'une constant récupérant la liste des équipements disponibles
+    //Création d'une constante récupérant la liste des équipements disponibles
     return (
       <ul className="apartment__equipments">
         {equipments.map((equipement, index) => {
