@@ -11,9 +11,8 @@ const Card = () => {
           /*On récupère les données de l'API*/
           return (
             <article key={id} className="gallery__card">
-              {' '}
               {/* l'id est utilisée comme clef unique*/}
-              {/*On créé un lien grace à Link vers la page logement en utilisation l'id*/}
+              {/*On créé un lien grâce à Link vers la page logement en utilisant l'id*/}
               <Link to={`/logement/${id}`}>
                 <div className="gradient__card"></div>
                 <img /*Gestion de l'image*/
